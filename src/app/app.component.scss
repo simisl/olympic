@@ -1,0 +1,175 @@
+*{
+  font-family: Segoe UI,Segoe WP,Tahoma,Arial,sans-serif;
+}
+.mainContainer{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  background-image: url(https://cdn.forms.office.net/forms/images/theme/meeting.png);
+  border: 1px solid red;
+
+}
+.subContainer{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width:60%;
+  border: 1px solid green;
+  background-color: white;
+  justify-content: space-between;
+}
+.mainHeading{
+  color: white;
+  background-color: #053870;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 20px;
+}
+label{
+  margin-top:10px;
+  padding-left: 10px;
+  // border:1px solid red;
+}
+input[type=text]{
+  width:100%;
+  margin-left: 20px;;
+  margin-top: 20px;
+  margin-bottom:70px;
+  height: 35px;
+
+}
+input[type=checkbox]{
+  width:20px;
+  margin-left: 20px;;
+  margin-top: 20px;
+  margin-bottom:10px;
+  height: 20px;
+
+}
+.formContainer{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.footer{
+  margin-top: 50px;
+  padding-top: 10px;
+  //border:1px solid red;
+  bottom:0;
+  font-size: 12px;
+  background: rgba(244,244,244,.8)
+}
+.formCls{
+  display: flex;
+  flex-direction: column;
+}
+.star{
+  color:red;
+}
+.req{
+  padding-bottom: 40px;
+}
+img{
+  width:40px;
+  height: 40px;
+  //border: 1px solid red;
+}
+.last{
+  margin-top:20px;
+  margin-bottom: 10px;
+}
+h1{
+  margin-top: 0;
+  //border: 1px solid white;
+  font-size: 38px;
+  line-height: 1.3;
+  font-weight: 500;
+  margin-left: 90px;
+}
+.banner{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  //border: 1px solid white;
+}
+p{
+  margin-block-end: 0;
+  margin-block-start: 0;
+  font-size: 15px;
+}
+.btnRight{
+  margin-top:20px;
+  float: right;
+  padding:10px;
+  background-color: #053870;
+  color:white;
+  border: 0;
+  font-size: 15px;
+}
+.btnRight:hover{
+  background-color: black;
+  cursor: pointer;
+}
+.btnSubmit{
+  margin-top: 50px;
+  background-color: #053870;
+  float: left;
+  color:white;
+  width:20%;
+  border: 0;
+  padding:10px;
+}
+.checkCls{
+  margin-bottom: 50px;
+}
+.rating {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+  }
+
+  .rating > input{
+   display:none;
+  }
+
+  .rating > label {
+  position: relative;
+  width: 1.1em;
+  font-size: 2vw;
+  color: #053870;
+  cursor: pointer;
+  }
+
+  .rating > label::before{
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+  }
+
+  .rating > label:hover:before,
+  .rating > label:hover ~ label:before {
+  opacity: 1 !important;
+  }
+
+  .rating > input:checked ~ label:before{
+  opacity:1;
+  }
+
+  .rating:hover > input:checked ~ label:before{
+  opacity: 0.4;
+  }
+  .formEnd{
+    margin-top: 30px;
+    font-size: 12px;
+  }
+  a{
+    color: #053870;
+  }
+@media screen and (max-width: 900px) {
+  .subContainer{
+    width:100%;
+  }
+
+}
